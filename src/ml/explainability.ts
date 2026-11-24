@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Transparent Forensic Explainability:
  * 1. Integrated Gradients (Sundararajan, Taly, Yan 2017)
  *    Computes path integral of gradients along straight-line trajectory from baseline:

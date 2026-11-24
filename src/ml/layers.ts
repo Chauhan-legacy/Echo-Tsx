@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Pure TypeScript Deep Learning Layers with Analytical Backward Gradients:
  * 1. Dilated Depthwise Conv1D
  * 2. Pointwise Conv1D (1x1 conv)

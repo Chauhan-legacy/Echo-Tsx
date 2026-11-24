@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Direction of Arrival (DOA) and Subspace Frequency Estimation:
  * 1. MUSIC (Multiple Signal Classification - Schmidt 1986)
  * 2. Root-MUSIC (Barabell 1983)

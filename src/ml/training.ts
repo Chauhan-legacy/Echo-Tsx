@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Pure TypeScript Model Training Engine:
  * 1. AdamW Optimizer with Decoupled Weight Decay (Loshchilov & Hutter 2019)
  * 2. Cosine Annealing Learning Rate Schedule with Linear Warmup

@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Zero-Dependency Classic Machine Learning Algorithms (Pure TypeScript)
  *
  * Implements:

@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Probabilistic Calibration & Conformal Prediction:
  * 1. Temperature Scaling (Guo et al. 2017)
  * 2. Isotonic Regression (Pool Adjacent Violators Algorithm - PAVA)

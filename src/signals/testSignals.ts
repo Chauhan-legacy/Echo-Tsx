@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Ground-truth synthetic test signals for validating forensic DSP and ML algorithms.
  * Zero external dependencies. Uses Xoshiro128p for deterministic PRNG.
  */

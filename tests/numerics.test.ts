@@ -1,3 +1,7 @@
+/**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
 import { describe, it, expect } from 'vitest';
 import { Xoshiro128p } from '../src/numerics/prng';
 import { kahanSum, kahanDot } from '../src/numerics/kahan';

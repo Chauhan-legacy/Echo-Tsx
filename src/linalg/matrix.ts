@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Zero-Dependency Dense Matrix Operations
  *
  * Designed for real-time DSP, Kalman filters, and array signal processing:

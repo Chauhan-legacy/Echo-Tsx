@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Zero-Dependency Arbitrary-Length Fast Fourier Transform (FFT)
  *
  * Implements:

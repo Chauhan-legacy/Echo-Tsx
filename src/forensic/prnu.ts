@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Photo-Response Non-Uniformity (PRNU) Camera Sensor Forensic Fingerprinting.
  *
  * Mathematical Foundations:

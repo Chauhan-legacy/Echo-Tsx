@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Robust Statistics and Hypothesis Testing for Audio & Video Forensics:
  * 1. Median & Median Absolute Deviation (MAD)
  * 2. Huber M-Estimator of Location

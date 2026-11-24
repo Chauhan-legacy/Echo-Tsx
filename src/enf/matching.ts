@@ -1,3 +1,7 @@
+/**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
 import { kahanDotProduct } from '../numerics/kahan';
 
 export interface GridMatchResult {

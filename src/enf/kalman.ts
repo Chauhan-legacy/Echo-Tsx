@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Adaptive Kalman Filter & Rauch-Tung-Striebel (RTS) Smoother for ENF Tracking
  *
  * State Vector:

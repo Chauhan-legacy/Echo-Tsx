@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Multi-Head Self-Attention with ALiBi (Attention with Linear Biases - Press et al. 2022).
  * Analytical forward and backward passes with zero external dependencies.
  */

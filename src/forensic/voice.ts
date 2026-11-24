@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Forensic Voice Analysis:
  * 1. Levinson-Durbin Recursion & LPC (Linear Predictive Coding)
  * 2. Formant Frequency and Bandwidth Estimation

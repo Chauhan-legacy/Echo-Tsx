@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Change-point detection algorithms for audio and sensor forensics:
  * 1. Two-Sided CUSUM (Page's Cumulative Sum Test)
  * 2. Bayesian Online Change-Point Detection (BOCPD - Adams & MacKay 2007)

@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Cramér-Rao Lower Bound (CRLB) for Frequency Estimation
  *
  * For a discrete sinusoidal tone in additive white Gaussian noise (AWGN) of length N,

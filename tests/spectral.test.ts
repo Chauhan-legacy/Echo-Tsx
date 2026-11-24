@@ -1,3 +1,7 @@
+/**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
 import { describe, it, expect } from 'vitest';
 import { generateWindow } from '../src/spectral/windows';
 import { computeWelchPSD } from '../src/spectral/welch';

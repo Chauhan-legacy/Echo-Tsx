@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Xoshiro128** (xoshiro128plusplus 1.1) PRNG
  *
  * Designed by David Blackman and Sebastiano Vigna (2019).

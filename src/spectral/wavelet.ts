@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Wavelet Packet Decomposition (WPD) with Coifman-Wickerhauser Best-Basis Selection.
  * Implements Shannon Entropy optimization and Daubechies D4 (db2) orthogonal filter bank.
  *

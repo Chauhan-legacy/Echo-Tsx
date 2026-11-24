@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Independent Component Analysis: FastICA (Hyvärinen 1999).
  *
  * Separates mixed acoustic sensor channels or unmixes covert tracking tones from voice/music.

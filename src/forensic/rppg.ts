@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Remote Photoplethysmography (rPPG) Pulse Extraction from Facial Video RGB Signals.
  *
  * Implements two gold-standard physiological optics methods:

@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * ECHO//TRACE Math & ML Engine
  * High-precision, zero-dependency forensic signal processing and deep learning library.
  * Designed for browser, Node.js, and Web Worker environments.

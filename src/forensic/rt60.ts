@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Forensic Room Acoustic Reverberation Estimator: Schroeder Backward Integration & Lundeby Method.
  *
  * Mathematical Derivation:

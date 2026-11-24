@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Discrete Frequency Tone Evaluator & Goertzel Single-Bin Analyzer
  *
  * Computes the exact discrete Fourier transform coefficient at arbitrary target

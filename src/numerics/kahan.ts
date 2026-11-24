@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * High-Precision Compensated Summation
  *
  * Implements Neumaier's improved Kahan summation algorithm:

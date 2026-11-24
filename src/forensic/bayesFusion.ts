@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Forensic Evidence Fusion via Bayesian Log-Odds and Likelihood Ratios.
  * Follows the European Network of Forensic Science Institutes (ENFSI) guideline.
  *

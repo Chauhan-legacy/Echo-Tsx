@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Numerically Stable Special Functions & Neural Activations
  *
  * Prevents underflow, overflow, and NaN across deep network layers.

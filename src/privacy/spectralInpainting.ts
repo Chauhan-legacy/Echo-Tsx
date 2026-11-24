@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Forensic Privacy: Noise-Floor Matched Spectral Inpainting.
  *
  * Problem:

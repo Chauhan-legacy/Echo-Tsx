@@ -1,4 +1,8 @@
 /**
+ * Copyright 2026 Priyansh Chauhan
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/**
  * Pre-LayerNorm Forensic Neural Network Architecture:
  * Stacks Dilated Convolutions (receptive field expansion) + Multi-Head Self-Attention (ALiBi)
  * with multi-task forensic classification heads (tracker detection, hum detection, tampering probability).
