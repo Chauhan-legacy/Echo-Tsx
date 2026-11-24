@@ -16,6 +16,7 @@ export function stableSigmoid(x: number): number {
     return z / (1.0 + z);
   }
 }
+export { stableSigmoid as sigmoid };
 
 /**
  * Numerically stable log1p: log(1 + x)

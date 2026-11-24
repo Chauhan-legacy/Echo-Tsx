@@ -173,7 +173,8 @@ export function checkGradients(
   lossFn: (param: Float64Array) => number,
   param: Float64Array,
   analyticalGrad: Float64Array,
-  eps: number = 1e-5
+  eps: number = 1e-7,
+  tolerance: number = 1e-6
 ): { maxRelError: number; maxAbsError: number; passed: boolean } {
   const n = Math.min(param.length, 25); // Check subset of weights for efficiency
   let maxRel = 0.0;
@@ -203,6 +204,6 @@ export function checkGradients(
   return {
     maxRelError: maxRel,
     maxAbsError: maxAbs,
-    passed: maxRel < 1e-3 || maxAbs < 1e-4,
+    passed: maxRel < tolerance || maxAbs < tolerance,
   };
 }

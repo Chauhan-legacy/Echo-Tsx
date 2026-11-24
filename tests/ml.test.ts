@@ -42,9 +42,9 @@ describe('Deep Learning & Training Engine Suite', () => {
       return loss;
     }
 
-    const check = checkGradients(lossFn, layer.weights, layer.gradWeights, 1e-5);
+    const check = checkGradients(lossFn, layer.weights, layer.gradWeights, 1e-7, 1e-6);
     expect(check.passed).toBe(true);
-    expect(check.maxRelError).toBeLessThan(1e-3);
+    expect(check.maxRelError).toBeLessThan(1e-6);
   });
 
   it('MultiHeadAttentionALiBi runs forward and backward without NaN or Inf', () => {
