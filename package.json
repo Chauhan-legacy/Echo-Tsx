@@ -1,7 +1,7 @@
 {
-  "name": "echotrace-math",
+  "name": "echo-tsx",
   "version": "1.0.0",
-  "description": "High-assurance, zero-dependency mathematical signal processing, forensic estimation, and client-side deep learning library in TypeScript.",
+  "description": "Echo-Tsx: High-assurance, zero-dependency mathematical signal processing, physical forensics, and client-side deep learning library in TypeScript.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
