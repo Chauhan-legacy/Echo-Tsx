@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build caches & logs
+*.log
+*.tsbuildinfo
+.npm/
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+
+# OS metadata
+.DS_Store
+Thumbs.db

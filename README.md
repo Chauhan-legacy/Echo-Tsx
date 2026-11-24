@@ -59,6 +59,18 @@ const pceResult = computePCE(residual, referenceFingerprint, 1280, 720);
 console.log(`PCE: ${pceResult.pce.toFixed(2)} (Threshold: > 60.0 indicates matching camera sensor)`);
 ```
 
+### Example 4: Aircraft Acoustic Doppler S-Curve Extraction & ADS-B Geolocation
+```typescript
+import { fitAircraftDoppler, evaluateDopplerFreq } from 'echotrace-math';
+
+// Measured spectral ridge times and peak frequencies from audio STFT
+const times = new Float64Array([2.0, 4.0, 6.0, 7.5, 9.0, 11.0, 13.0]);
+const freqs = new Float64Array([185.2, 183.1, 178.6, 160.0, 141.4, 136.9, 134.8]);
+
+const fit = fitAircraftDoppler(times, freqs);
+console.log(`Fitted Speed: ${(fit.v * 3.6).toFixed(1)} km/h, Closest Distance: ${fit.dMin.toFixed(0)}m, R²: ${fit.r2.toFixed(3)}`);
+```
+
 ---
 
 ## 3. Module Overview
@@ -72,6 +84,7 @@ console.log(`PCE: ${pceResult.pce.toFixed(2)} (Threshold: > 60.0 indicates match
 - **`spectral/multitaper`:** Thomson discrete prolate spheroidal sequence (DPSS) multitaper spectral estimation.
 - **`enf/kalman`:** 2D frequency/drift adaptive Kalman filter with Mahalanobis innovation outlier gating and RTS backward smoothing.
 - **`enf/crlb`:** Cramer-Rao Lower Bound analytical calculation for multiharmonic frequency estimators.
+- **`forensic/aircraftDoppler`:** Non-linear least-squares kinematic Doppler S-curve fitting for high-altitude turbofans, CPA distance estimation, and ADS-B flight corridor triangulation.
 - **`forensic/rt60`:** Schroeder energy backward integration with Lundeby automated noise-floor truncation.
 - **`forensic/prnu`:** Photo-Response Non-Uniformity sensor noise residual extraction and 2D normalized cross-correlation PCE.
 - **`forensic/rppg`:** Remote photoplethysmography using CHROM and POS plane-orthogonal-to-skin projection algorithms.
