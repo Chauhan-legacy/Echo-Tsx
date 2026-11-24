@@ -1,0 +1,46 @@
+{
+  "name": "echotrace-math",
+  "version": "1.0.0",
+  "description": "High-assurance, zero-dependency mathematical signal processing, forensic estimation, and client-side deep learning library in TypeScript.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "dsp",
+    "forensics",
+    "kalman-filter",
+    "music-doa",
+    "fastica",
+    "wavelets",
+    "rppg",
+    "enf-analysis",
+    "machine-learning",
+    "attention",
+    "privacy"
+  ],
+  "author": "ECHO//TRACE Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "~7.0.2",
+    "vitest": "^5.1.1"
+  }
+}
