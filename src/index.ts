@@ -54,3 +54,4 @@ export * from './ml/network';
 export * from './ml/training';
 export * from './ml/calibration';
 export * from './ml/explainability';
+export * from './ml/classic';

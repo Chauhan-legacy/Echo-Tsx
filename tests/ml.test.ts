@@ -5,6 +5,14 @@ import { ForensicDetectorNetwork } from '../src/ml/network';
 import { AdamWOptimizer, checkGradients, getCosineWarmupLR, clipGradNorm } from '../src/ml/training';
 import { computeECE, fitTemperature, computeConformalThreshold } from '../src/ml/calibration';
 import { computeIntegratedGradients, computeAttentionRollout } from '../src/ml/explainability';
+import { DenseMatrix } from '../src/linalg/matrix';
+import {
+  LogisticRegression,
+  SupportVectorMachine,
+  KNearestNeighbors,
+  PrincipalComponentAnalysis,
+  MahalanobisAnomalyDetector,
+} from '../src/ml/classic';
 
 describe('Deep Learning & Training Engine Suite', () => {
   it('Finite-difference gradient check on PointwiseConv1D verifies analytical backprop (< 1e-3 relative error)', () => {
@@ -142,5 +150,55 @@ describe('Deep Learning & Training Engine Suite', () => {
     const attn1 = new Float64Array(T * T).fill(1.0 / T);
     const rollout = computeAttentionRollout([attn1, attn1], T);
     expect(rollout.length).toBe(T * T);
+  });
+
+  it('Classic ML: Logistic Regression, SVM, k-NN, PCA, and Mahalanobis Detector', () => {
+    // 1. Logistic Regression
+    const Xlog = new DenseMatrix(6, 2);
+    // Class 0: (1, 1), (1, 2), (2, 1)
+    Xlog.set(0, 0, 1); Xlog.set(0, 1, 1);
+    Xlog.set(1, 0, 1); Xlog.set(1, 1, 2);
+    Xlog.set(2, 0, 2); Xlog.set(2, 1, 1);
+    // Class 1: (8, 8), (8, 9), (9, 8)
+    Xlog.set(3, 0, 8); Xlog.set(3, 1, 8);
+    Xlog.set(4, 0, 8); Xlog.set(4, 1, 9);
+    Xlog.set(5, 0, 9); Xlog.set(5, 1, 8);
+    const yLog = [0, 0, 0, 1, 1, 1];
+
+    const lr = new LogisticRegression(2);
+    lr.fit(Xlog, yLog, 150, 0.1);
+    expect(lr.predict([1.5, 1.5])).toBe(0);
+    expect(lr.predict([8.5, 8.5])).toBe(1);
+
+    // 2. Support Vector Machine (Linear / RBF)
+    const svm = new SupportVectorMachine('linear', 0.5, 1.0);
+    const Xsvm = [[1, 1], [1, 2], [2, 1], [8, 8], [8, 9], [9, 8]];
+    svm.fit(Xsvm, yLog, 50);
+    expect(svm.predict([1.5, 1.5])).toBe(0);
+    expect(svm.predict([8.5, 8.5])).toBe(1);
+
+    // 3. k-NN
+    const knn = new KNearestNeighbors(3);
+    knn.fit(Xsvm, yLog);
+    expect(knn.predict([1.2, 1.3])).toBe(0);
+    expect(knn.predict([8.2, 8.3])).toBe(1);
+
+    // 4. PCA: Collinear data has > 95% variance on 1st component
+    const Xpca = new DenseMatrix(5, 2);
+    for (let i = 0; i < 5; i++) {
+      Xpca.set(i, 0, i * 2.0);
+      Xpca.set(i, 1, i * 2.0 + 0.05 * Math.sin(i));
+    }
+    const pca = new PrincipalComponentAnalysis(1);
+    pca.fit(Xpca);
+    expect(pca.explainedVariance![0]!).toBeGreaterThan(1.0);
+    const reduced = pca.transform([4.0, 4.0]);
+    expect(reduced.length).toBe(1);
+
+    // 5. Mahalanobis Anomaly Detector
+    const mad = new MahalanobisAnomalyDetector();
+    mad.fit(Xlog, 90.0);
+    expect(mad.isAnomaly([1.5, 1.5])).toBe(false); // In distribution
+    expect(mad.isAnomaly([100.0, -50.0])).toBe(true); // Huge outlier
   });
 });
