@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use echotrace-math in research or forensic analysis, please cite it as below."
+authors:
+  - family-names: "ECHO//TRACE Team"
+    given-names: "Forensics & Mathematical Engineering Lab"
+title: "echotrace-math: High-Assurance Client-Side Forensic Signal Processing and Machine Learning Library in TypeScript"
+version: 1.0.0
+date-released: 2026-11-24
+url: "https://github.com/echotrace/echotrace-math"
+license: Apache-2.0
+keywords:
+  - audio forensics
+  - digital signal processing
+  - ENF estimation
+  - camera PRNU
+  - remote photoplethysmography
+  - zero-dependency
+  - typescript
