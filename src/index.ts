@@ -47,6 +47,7 @@ export * from './forensic/doa';
 export * from './forensic/ica';
 export * from './forensic/bayesFusion';
 export * from './forensic/robustStats';
+export * from './forensic/aircraftDoppler';
 
 // Forensic Privacy & Redaction
 export * from './privacy/spectralInpainting';
