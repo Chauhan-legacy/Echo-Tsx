@@ -23,6 +23,14 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chauhan-legacy/Echo-Tsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chauhan-legacy/Echo-Tsx/issues"
+  },
+  "homepage": "https://github.com/Chauhan-legacy/Echo-Tsx#readme",
   "keywords": [
     "dsp",
     "forensics",

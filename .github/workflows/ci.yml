@@ -24,13 +24,13 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Type check (Strict Mode)
-        run: npx tsc -p packages/echotrace-math/tsconfig.build.json
+        run: npx tsc -p tsconfig.build.json
 
       - name: Run unit & property tests
-        run: npx vitest run packages/echotrace-math/tests/
+        run: npx vitest run tests/
 
-      - name: Build library bundles (ESM, CJS, UMD Minified)
-        run: npx tsx scripts/buildLibrary.ts
+      - name: Build library (Type declarations & bundles)
+        run: npm run build
